@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/but du langage RSL.css" type="text/css">
+    <title>but du langage RSL</title>
+</head>
+<body>
+    <section class="header-section">
+        <header>
+            <div class="header">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">ACCUEIL</a></li>
+                        <li><a href="produits.html">COURS</a></li>
+                        <li><a href="#">A PROPOS</a></li>
+                        <li><a href="#">CONTACTS</a></li>
+                        <li><a href="account.html">COMPTE</a></li>
+                    </ul>
+                    <form>
+                        <input type="search" name="q" placeholder="recherche">
+                    </form>
+                </nav>
+            </div>
+        </header>
+    <h2> 2.	Le but du langage RSL</h2>
+        <p>
+            En fait, les tests de cas supportés par le langage de programmation <b><i>RSL</i></b> ont pour but d’appliquer un ensemble des tests sur la spécification formelle de l’outil.
+            Le but des tests de cas est de découvrir les erreurs le plutôt possible, avant l’implémentation de l’outil avec un tel langage de programmation. 
+            Le <b><i>RSL</i></b> est utilisé, dans le but de spécifier toutes fonctionnalités nécessaires pour la recherche d’impact et élimination de l’ambiguïté présenté au niveau de la spécification avec <b><i>UML</i></b>.
+            Le choix de spécifier les fonctionnalités de notre outil explicitement avec <b><i>RSL</i></b> est basé sur deux raisons: premièrement pour éliminer l’ambiguïté présentée lors de l’utilisation des diagrammes <b><i>UML</i></b>. 
+            Deuxièmement, pour appliquer un ensemble de tests  sur la spécification concrète, surtout avant le codage de l’outil avec un tel langage de programmation.
+            L’utilisation du traducteur <b><i>UML2RSL</i></b> est composée de trois étapes principales:
+            <ul>
+                <li>Une saisie graphique du diagramme de classes;</li>
+                <li>Une génération automatique du diagramme de classes, dans un format <b><i>XML</i></b>;</li>
+                <li>Un parsing pour le fichier obtenu en <b><i>XML</i></b> (en utilisant le traducteur <b><i>UML2RSL</i></b>), afin d’obtenir le squelette de la spécification de l’outil avec <b><i>RSL</i></b>. En effet, le traducteur vérifie la syntaxe du diagramme de classes avant la génération automatique de la spécification primaire, sinon il génère des messages d’erreurs.
+            Le résultat de la génération du diagramme <b><i>UML</i></b> en <b><i>RSL</i></b> est modulaire.
+            Cette génération consiste en plusieurs fichiers.
+            L’un des fichiers générés par le traducteur est nommé <b><i>SYSTEM.rsl</i></b>.
+            Le module System.rsl correspond au module du plus haut niveau de structuration de la spécification en <b><i>RSL</i></b>.
+            Il contient la spécification de toutes les fonctionnalités présentées dans les autres modules auxiliaires.
+            Lors de la génération de la spécification vers <b><i>RSL</i></b>, chaque classe est traduite avec deux modules.
+            Le premier module <b><i>(ex. PROJECT)</i></b> représente la classe avec ses attributs et il prend le même nom que la classe.
+            Le deuxième module <b><i>(ex. PROJECT)</i></b> représente l’ensemble des objets existants d’une même classe.
+            </ul>
+        </p>
+        <footer>
+            <center><h2>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Ce site web a été réalisé par YAYA DJIBRILLA AOUDI Mat: 20B169FS </h2></center>
+        </footer>
+</body>
+</html>

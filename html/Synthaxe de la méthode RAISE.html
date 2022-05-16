@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Synthaxe de la methode RAISE.css" type="text/css">
+    <title>Syntaxe de la méthode RAISE</title>
+</head>
+<body>
+    <section class="header-section">
+        <header>
+            <div class="header">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">ACCUEIL</a></li>
+                        <li><a href="produits.html">COURS</a></li>
+                        <li><a href="#">A PROPOS</a></li>
+                        <li><a href="#">CONTACTS</a></li>
+                        <li><a href="account.html">COMPTE</a></li>
+                    </ul>
+                    <form>
+                        <input type="search" name="q" placeholder="recherche">
+                    </form>
+                </nav>
+            </div>
+        </header>
+    <h2>3. Synthaxe de la méthode RAISE</h2>
+    <p>
+        <i><b>Object.RAISE(number, source, description, helpfile, helpcontext)</b></i> <br>
+           <b> Object :</b> <br>
+                Toujours l’objet <i><b>Err.</b></i> <br>
+                <br><b> Number : </b><br>
+                    Un sous-type entier <i><b>Long</b></i>  qui identifie la nature de l’erreur. Les erreurs <i><b>VBscript</b></i>  (tant définies par <i><b>VBscript</b></i> que par l’utilisateur) sont comprises dans la plage 0-65535.
+                <br><b>Source :</b> <br>
+                    Une expression de chaine nommant l’objet ou l’application ayant initialement généré l’erreur. Lorsque vous définissez cette propriété pour un objet automatique, utiliser la forme project.class. Si rien n’est spécifié, l’identificateur de ressource du projet <i><b>VBscript</b></i> en cours est utilisé.
+                <br> <b>Description : </b> <br>
+                    Une expression de chaine décrivant l’erreur. Si elle n’est pas spécifiée, la valeur contenue dans l’argument number est examinée. Si elle peut être associée à un code d’erreur d’exécution <i><b>VBscript</b></i>, une chaine fournie par <i><b>VBscript</b></i> est utilisé comme description. S’il n’existe aucune erreur <i><b>VBscript</b></i> correspondant à la valeur de l’argument number, un message d’erreur générique est utilisé.
+                <br><b> Helpfile : </b><br>
+                    Le chemin d’accès complet du fichier d’aide contenant l’aide relative à cette erreur. Si cet argument n’est pas spécifié, <i><b>VBscript</b></i> utilise le lecteur, le chemin d’accès et le nom du fichier d’aide <i><b>VBscript</b></i>.
+                <br><b> Helpcontext :</b> <br>
+                    L’identificateur de contexte identifiant une rubrique contenue dans l’argument helpfile qui fournit l’aide correspondant à l’erreur. S’il est omis, l’identificateur de contexte du fichier d’aide <i><b>VBscript</b></i> pour l’erreur correspondant à la propriété number est utilisé, s’il existe.
+                <br><b> Remarque :</b> <br>
+                    Tous les arguments sont facultatifs à l’exception de <i><b>number</b></i>. Cependant, si vous utilisez la méthode <i><b>RAISE</b></i> sans spécifier certains arguments et que les définitions des propriétés de l’objet <i><b>Err</b></i> contiennent des valeurs qui n’ont pas encore été supprimées, ces valeurs deviennent les valeurs de votre erreur.
+                <br>Lorsque vous définissez la propriété <i><b>number</b></i> pour votre propre code d’erreur dans un objet Automatique, vous ajoutez le numéro de votre code d’erreur à la constante <i><b>vbobjectError</b></i> . Par exemple, pour générer le numéro d’erreur 1050, affectez <i><b>vbobjectError</b></i>+1050 à la propriété <i><b>number</b></i>.
+                <br>Lorsqu'une erreur d'exécution se produit, les propriétés de l'objet <i><b>Err</b></i> sont renseignées avec des informations qui identifient de manière unique l'erreur et des informations qui peuvent être utilisées pour la gérer. Pour générer une erreur d'exécution dans votre code, utilisez la méthode <i><b>RAISE</b></i>.
+
+    </p>
+    <footer>
+        <center><h2>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Ce site web a été réalisé par YAYA DJIBRILLA AOUDI Mat: 20B169FS </h2></center>
+    </footer>
+    
+</body>
+</html>
